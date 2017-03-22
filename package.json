@@ -1,0 +1,40 @@
+{
+  "name": "graphql-fake",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-react": "^6.8.0",
+    "react-scripts": "^0.8.4",
+    "redux-devtools": "^3.3.2",
+    "redux-devtools-dock-monitor": "^1.1.1",
+    "redux-devtools-log-monitor": "^1.2.0",
+    "redux-slider-monitor": "^1.0.7"
+  },
+  "dependencies": {
+    "axios": "^0.15.1",
+    "babel-eslint": "^7.1.1",
+    "class-autobind": "^0.1.4",
+    "cookie_js": "^1.2.0",
+    "eslint": "^3.13.1",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-react": "^6.9.0",
+    "eslint-plugin-standard": "^2.0.1",
+    "graphiql": "^0.9.3",
+    "graphql": "^0.9.1",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-redux": "^5.0.2",
+    "react-router": "^2.8.1",
+    "redux": "^3.5.2",
+    "redux-thunk": "^2.2.0",
+    "watch": "^1.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/react-scripts/config/eslint.js"
+  }
+}
