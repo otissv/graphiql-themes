@@ -1,45 +1,106 @@
 .material .graphiql-container .docExplorerHide:hover,
 .material .graphiql-container .search-box .search-box-clear:hover {
-  color: #c30788;
+  color: #3f4f57;
+  transition: color 0.3s ease;
 }
 
 .material .graphiql-container .doc-explorer-contents {
-  border-top: 2px solid #c30788;
-  
+  border-top: 2px solid #3f4f57;
+  transition: color 0.3s ease;
+}
+
+.graphiql-container .docExplorerShow,
+.graphiql-container .topBar {
+  border-bottom: 2px solid #3f4f57;
 }
 
 .material .graphiql-container .doc-category-title {
-  border-color: #c30788
+  border-color: #3f4f57;
+  transition: border-color 0.3s ease;
 }
 
+.graphiql-container .docExplorerShow,
+.graphiql-container .doc-explorer-back {
+  color: #fff;
+}
+
+.graphiql-container .docExplorerShow:before,
+.graphiql-container .doc-explorer-back:before {
+  border-color: #fff;
+}
+
+
+.material .neo .graphiql-container .execute-button,
+.material .neo .graphiql-container .toolbar-button error,
+.material .neo .graphiql-container .toolbar-button {
+  background: #3f4f57 !important;
+  transition: background 0.3s ease;
+}
 
 .material .graphiql-container .result-window .CodeMirror,
 .material .graphiql-container .variable-editor-title {
   background: #263238;
+  transition: background 0.3s ease;
 }
 
 .material .graphiql-container .docExplorerShow,
 .material .graphiql-container .topBar {
   background: #1f2b31;
+  transition: background 0.3s ease;
 }
 
+
+
+
+.material .graphiql-container .footer,
+.material .graphiql-container .variable-editor-title ,
+.material .graphiql-container .title {
+  color: #bcbcbc !important;
+  transition: color 0.3s ease;
+}
+
+
+
+.material .graphiql-container input.theme-switch:checked {
+  background: #bcc1c4 !important;
+  transition: color 0.3s ease;
+}
+
+
+.material .graphiql-container .footer {
+  color: #1f2b31;
+}
+
+
+
+/* Buttons */
 .material .graphiql-container .execute-button,
 .material .graphiql-container .toolbar-button error,
-.material .graphiql-container .toolbar-button,
+.material .graphiql-container .toolbar-button 
 .material .graphiql-container .footer,
 .material .graphiql-container .variable-editor-title,
 .material .graphiql-container .resultWrap,
 .material .graphiql-container .result-window .CodeMirror-gutters {
-  background-color: #32454e;
+  background: #32454e;
+  transition: background 0.3s ease;
 }
 
-.material .graphiql-container .footer,
-.material .graphiql-container .variable-editor-title ,
 .material .graphiql-container .execute-button,
 .material .graphiql-container .toolbar-button error,
-.material .graphiql-container .toolbar-button,
-.material .graphiql-container .title {
-  color: #bcbcbc !important;
+.material .graphiql-container .toolbar-button {
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.material li.CodeMirror-hint-active, 
+.material ::selection,
+.material .graphiql-container .execute-button:hover,
+.material .graphiql-container .toolbar-button:focus,
+.material .graphiql-container .toolbar-button:hover,
+.material .graphiql-container .execute-button:active,
+.material .graphiql-container .toolbar-button:active {
+  background: #5f5e5e !important;
+  transition: background 0.3s ease;
 }
 
 .material .graphiql-container .execute-button svg {
@@ -48,18 +109,13 @@
   transition: all 0.3s ease;
 }
 
-.material .graphiql-container input.theme-switch:checked {
-  background: #bcc1c4 !important;
-}
-
-
-.material .graphiql-container .footer {
-  color: #1f2b31;
-}
 
 .material .graphiql-container .cm-number {
   color: #e46f64;
+  transition: color 0.3s ease;
 }
+
+
 
 /* Doc explorer dark */
 .material .graphiql-container .doc-explorer,
@@ -90,14 +146,9 @@
   border-bottom: 1px solid #32454e;
 }
 
-.material .graphiql-container .search-box:before {
-  top: 5px;
-}
-
 .material .graphiql-container .search-box > input {
   color: #fbfbfb;
   background: none;
-  padding: 6px 24px 8px 25px;
 }
 
 .material .graphiql-container .doc-category-title {
@@ -129,4 +180,8 @@
 .material .graphiql-container .footer,
 .material .graphiql-container .variable-editor-title {
   border-top: 1px solid #3f4f57;
+}
+
+.material .graphiql-container .cm-invalidchar {
+  color: #fff
 }

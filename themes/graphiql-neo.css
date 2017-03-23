@@ -12,17 +12,21 @@
   border-color: #c30788
 }
 
+.neo li.CodeMirror-hint-active, 
+.neo ::selection,
+.neo .graphiql-container .execute-button:hover,
+.neo .graphiql-container .toolbar-button:focus,
+.neo .graphiql-container .toolbar-button:hover,
+.neo .graphiql-container .execute-button:active,
+.neo .graphiql-container .toolbar-button:active {
+  background: #c30788 !important;
+}
+
 
 .neo .graphiql-container .field-name,
 .neo .graphiql-container .cm-property {
   color: #1d75b3;
   transition: color 0.3s ease;
-}
-
-.CodeMirror-guttermarker-subtle,
-.neo .graphiql-container .CodeMirror-linenumber {
-  transition: #51a0d8;
-  transition: transition 0.3s ease;
 }
 
 
@@ -44,9 +48,8 @@
 
 .neo .graphiql-container .execute-button,
 .neo .graphiql-container .toolbar-button error,
-.neo .graphiql-container .toolbar-button
-.neo .graphiql-container .title {
-  color: #777 !important;
+.neo .graphiql-container .toolbar-button {
+  color: #fff !important;
   transition: color 0.3s ease;
 }
 
@@ -69,13 +72,11 @@
   transition: color 0.3s ease;
 }
 
-.neo .graphiql-container input.theme-switch:checked {
-  background: #32454e  !important;
-}
+
 .neo .graphiql-container .execute-button,
 .neo .graphiql-container .toolbar-button error,
 .neo .graphiql-container .toolbar-button {
-  background: #bcc1c4 !important;
+  background: #bcc1c4;
   transition: background 0.3s ease;
 }
 

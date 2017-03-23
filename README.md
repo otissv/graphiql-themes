@@ -1,8 +1,8 @@
-#Graphiql-themes
-
-
+# Graphiql-themes
 A few themes for GrapiQl IDE
 
+## Still in development
+The theme is not yet complete.
 
 ## Usage
 Link the graphiql theme css in your html file.

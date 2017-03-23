@@ -42,11 +42,8 @@ export default class CustomGraphiQL extends React.Component {
       // (https://github.com/graphql/graphiql/blob/master/src/utility/fillLeafs.js#L75)
       getDefaultFieldNames: null,
 
-      // Code mirror theme for the editor window
-      editorTheme: 'neo',
-
-      // Code mirror theme for the results window 
-      resultTheme: 'neo'
+      // Graphiql theme
+      gqlTheme: 'material'
     };
   }
 
@@ -83,8 +80,12 @@ export default class CustomGraphiQL extends React.Component {
   // }
 
   render() {
-    return <div className={`graphiql-theme ${this.props.gqlTheme}`}>
-      <GraphiQL {...this.state}>
+    return <div className={`graphiql-theme ${this.state.gqlTheme}`}>
+      <GraphiQL 
+        {...this.state}
+        editorTheme={this.state.gqlTheme}
+        resultTheme={this.state.gqlTheme}
+      >
         <GraphiQL.Toolbar>
 
           <GraphiQL.Button
@@ -96,8 +97,7 @@ export default class CustomGraphiQL extends React.Component {
 
         </GraphiQL.Toolbar>
         <GraphiQL.Footer>
-          <span className='by'>By Otis Virginie</span>
-          otissv@gmail.com
+          <span className='by'>Theme by Otis Virginie</span>
         </GraphiQL.Footer>
       </GraphiQL>
     </div>;

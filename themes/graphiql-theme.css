@@ -1,7 +1,15 @@
+* {
+  -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
+
 .graphiql-theme {
   height: 100vh;
 }
-.graphiql-container .CodeMirror {
+.graphiql-container .CodeMirror,
+.graphiql-container input,
+.graphiql-container .doc-category-item {
   font-family: 'Source Code Pro', 'Consolas', 'Inconsolata', 'Droid Sans Mono','Monaco', monospace;
 }
 
@@ -10,7 +18,9 @@
 }
 
 .graphiql-container .docExplorerWrap {
-  position: relative;
+  position: fixed;
+  right: 0px;
+  height: 100vh;
   z-index: 9999;
   min-width: 320px;
 }
@@ -18,7 +28,6 @@
 .graphiql-container .docExplorerShow,
 .graphiql-container .topBar {
   border: none;
-  border-bottom: 2px solid #E10098;
   position: relative;
   z-index: 9999;
 }
@@ -46,6 +55,10 @@
   border-left-color: #fff !important;
 }
 
+.graphiql-container .title em {
+  color: #c30788;
+}
+
 .graphiql-container .execute-button,
 .graphiql-container .toolbar-button error,
 .graphiql-container .toolbar-button {
@@ -57,12 +70,13 @@
   border: none;
 }
 
+li.CodeMirror-hint-active, 
+::selection,
 .graphiql-container .execute-button:hover,
 .graphiql-container .toolbar-button:focus,
 .graphiql-container .toolbar-button:hover,
 .graphiql-container .execute-button:active,
 .graphiql-container .toolbar-button:active {
-  background: #c30788 !important;
   box-shadow: none;
 }
 
@@ -82,7 +96,7 @@
 }
 
 .graphiql-container .search-box:before {
-  top: 5px;
+  top: -2px;
 }
 
 .graphiql-container .search-box > input {
@@ -98,46 +112,6 @@
   padding: 0 6px 0 6px;
   line-height: 2;
   right: 20px;
-}
-
-.graphiql-container input.theme-switch {
-  font-size: 10px;
-  position: relative;
-  top: 13px;
-  display: inline-block;
-  appearance: none;
-  width: 34px;
-  height:34px;
-  border-radius: 2.3em;
-  margin: 0;
-  padding: 0;
-  background: #fbfbfb;
-  outline: 1px solid transparent !important;
-  cursor: pointer;
-  user-select: none;
-  margin-left: 13px;
-  -webkit-tap-highlight-color: transparent;
-  -webkit-touch-callout: none;
-  transition: background .3s ease-in-out, padding .25s ease-in-out;
-  transition-delay: .1s, 0s;
-}
-
-
-.graphiql-container input.theme-switch::after {
-  content: "\f043";
-  font-family: FontAwesome;
-  left: 12px;
-  position: absolute;
-  color: #c30788;
-  top: 10px;
-  width: 34px;
-  height: 34px;
-  font-size: 15px;
-}
-
-li.CodeMirror-hint-active, 
-::selection {
-  background: #c30788 !important;
 }
 
 .material .graphiql-container .result-window .CodeMirror-gutters,
